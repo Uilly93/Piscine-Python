@@ -13,5 +13,5 @@ def all_thing_is_obj(object: any) -> int:
 	elif not object:
 		return 42
 	else:
-		print("type not found")
+		print("Type not found")
 	return 42
