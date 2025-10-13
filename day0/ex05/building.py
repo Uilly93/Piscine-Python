@@ -30,6 +30,9 @@ def countOccurence(argv: list[str]) -> dict:
 
 def main():
     argv = sys.argv
+    line = (input("What is the text to count?\n"))
+    if line:
+        argv.append(line)
     try:
         chars = countOccurence(argv)
         print(f'The text contains {chars["characters"]} characters:\
