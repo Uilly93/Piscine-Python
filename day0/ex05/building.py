@@ -2,6 +2,16 @@ import sys
 
 
 def countOccurence(argv: list[str]) -> dict:
+    """
+    takes a list[str] and
+    retrun a dict with all the occurence count of characters
+    digits,
+    lower-cases,
+    upper-cases,
+    ponctuations,
+    spaces
+    in the second string
+    """
     if argv.__len__() > 2:
         raise AssertionError("AssertionError: Too many arguments")
     if argv.__len__() < 2:
