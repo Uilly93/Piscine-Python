@@ -2,8 +2,8 @@
 
 def ft_tqdm(lst: range) -> None:
     """
-    reproduce de behavior of official tqdm function that simulate a loading
-    bar from numbers of a range given in parameter
+    reproduce the behavior of the official tqdm function that simulate a
+    loading bar from numbers of a range given in parameter
     return None
     """
     for i, number in enumerate(lst):
