@@ -1,9 +1,12 @@
 
 
 def ft_tqdm(lst: range) -> None:
-    array: list = lst
-    loading: str = ''
-    for i, number in enumerate(array):
+    """
+    reproduce de behavior of official tqdm function that simulate a loading
+    bar from numbers of a range given in parameter
+    return None
+    """
+    for i, number in enumerate(lst):
         percentage = int(((i + 1) / lst.__len__()) * 100)
         loading = str(percentage) + '%|' + '█' * (percentage) + ' ' * \
             (100 - percentage) + '| ' + \
