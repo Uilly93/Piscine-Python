@@ -16,7 +16,8 @@ def whatIs(argv):
         else:
             raise AssertionError("Assertion Error: argument is not an integer")
     elif argv.__len__() > 2:
-        raise AssertionError("Assertion Error: more than one argument is provided")
+        raise AssertionError(
+            "Assertion Error: more than one argument is provided")
 
 
 def main():
