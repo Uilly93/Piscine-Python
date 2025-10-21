@@ -46,7 +46,7 @@ def ft_blue(array: np.ndarray) -> np.ndarray:
 def ft_grey(array: np.ndarray) -> np.ndarray:
     """apply grey filter to image"""
     arr_grey = array.copy()
-    arr_grey = arr_grey[:, :, 1][:,:,2][:,:,0] / 3
+    arr_grey = arr_grey[:, :, 1]
     image = Image.fromarray(arr_grey)
     image.show()
     return arr_grey
