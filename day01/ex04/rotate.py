@@ -13,7 +13,7 @@ def ft_zoom(image: Image, box: tuple):
 
 
 def ft_rotate(image: Image):
-    """rotate the the image at 90 degres counterclockwise"""
+    """return the rotated image at 90 degres counterclockwise"""
     array = np.array(image)
     rows = len(array)
     cols = len(array[0])
