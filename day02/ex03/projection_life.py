@@ -1,10 +1,13 @@
 from load_csv import load
-import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
 
 def display_graph(path_ipp: str, path_ley, year: str):
+    """take 2 file_path.csv: str, and a year: str
+    displays the projection of life expectancy
+    in relation to the gross national product of
+    the year 1900 for each country."""
     ipp = load(path_ipp)
     ley = load(path_ley)
     ipp = ipp[year].to_numpy()

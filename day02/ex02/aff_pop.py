@@ -1,10 +1,13 @@
 from load_csv import load
-import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
 
 def convert_value(array: np.ndarray):
+    """convert value from an np.ndarray
+    example: 155k -> 0.155,
+             125M -> 125,
+             12B -> 12 000"""
     mult = {"k": 1000,
             "M": 1,
             "B": 1000}

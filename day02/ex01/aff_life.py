@@ -1,9 +1,10 @@
 from load_csv import load
-import pandas as pd
 import matplotlib.pyplot as plt
 
 
 def display_graph(path: str):
+    """Loads the file.csv from path: str
+    , and displays the country information"""
     df = load(path)
     fr = df[df["country"] == 'France']
     year = df.columns[1:].astype(int)
